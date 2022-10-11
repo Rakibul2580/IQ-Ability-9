@@ -9,7 +9,7 @@ const Header = () => {
       <div className="navbar bg-gradient-to-r from-violet-300 to-fuchsia-300 rounded-md z-10">
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-2xl font-bold text-cyan-900">
-            daisyUI
+            IQ Ability
           </a>
         </div>
         <div className="flex-none gap-2">
