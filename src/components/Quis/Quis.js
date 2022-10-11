@@ -31,7 +31,7 @@ const Quis = () => {
     <div className="blog sm:flex">
       <div className="md:w-9/12 w-12/12">
         <h1 className="text-5xl font-bold text-sky-400 mt-5">
-          {datas.data.name}
+          Quiz of: {datas.data.name}
         </h1>
         {datas.data.questions.map((item) => (
           <Prinquis key={item.id} item={item} handleAns={handleAns}></Prinquis>
