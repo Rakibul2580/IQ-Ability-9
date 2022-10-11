@@ -17,7 +17,7 @@ const Errorpage = () => {
             <h4 className="text-yellow-500 font-bold text-3xl my-5">
               Page Not Found
             </h4>
-            <Link to={"/"} className="btn btn-primary">
+            <Link to={"/"} className="btn bg-sky-800 border-0">
               go home
             </Link>
           </div>
