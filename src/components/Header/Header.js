@@ -5,7 +5,7 @@ import { faList } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <div className="container mx-auto px-1">
+    <div className="container mx-auto">
       <div className="navbar bg-gradient-to-r from-violet-300 to-fuchsia-300 rounded-md z-10">
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-2xl font-bold text-cyan-900">

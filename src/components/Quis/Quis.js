@@ -37,8 +37,8 @@ const Quis = () => {
           <Prinquis key={item.id} item={item} handleAns={handleAns}></Prinquis>
         ))}
       </div>
-      <div className="w-3/12">
-        <div className=" bg-sky-400 py-4 px-1 sticky top-0 rounded-md mr-5">
+      <div className="md:w-3/12 w-12/12">
+        <div className=" bg-sky-400 py-4 px-1 sticky top-0 rounded-md mx-5 md:mr-5">
           <h1 className="text-white text-3xl font-bold">Marks</h1>
           <h4 className="text-white text-lg font-medium mt-2">
             Total Quiz: {datas.data.questions.length}

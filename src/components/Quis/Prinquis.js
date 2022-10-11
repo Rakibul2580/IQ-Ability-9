@@ -27,20 +27,22 @@ const Prinquis = ({ item, handleAns }) => {
             />
           </button>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+        <form className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
           {options.map((option) => (
-            <laval className="flex items-center p-3 rounded-md bg-sky-200 shadow-xl text-black font-medium mt-3">
+            <label
+              onClick={() => handleAns(correctAnswer, option)}
+              className="flex items-center p-3 rounded-md bg-sky-200 shadow-xl text-black font-medium mt-3"
+            >
               <input
-                onClick={() => handleAns(correctAnswer, option)}
                 type="radio"
-                name="radio"
+                name="radio-6"
                 className="radio radio-accent"
-                checked
+                clicked
               />
               <p className="ml-2">{option}</p>
-            </laval>
+            </label>
           ))}
-        </div>
+        </form>
       </div>
     </div>
   );
