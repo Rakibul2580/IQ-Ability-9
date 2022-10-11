@@ -12,11 +12,11 @@ const Homecard = ({ item }) => {
           className="w-full bg-slate-400 rounded-lg hover:translate-y-6 transition"
         />
       </figure>
-      <div className="p-5 justify-between items-center bg-slate-500 flex">
-        <h2 className="card-title">{name}</h2>
+      <div className="p-5 justify-between items-center bg-slate-500 blog sm:flex">
+        <h2 className="sm:card-title">{name}</h2>
         <p>{total}</p>
         <div className="card-actions justify-end">
-          <Link to={`items/${id}`} className="btn btn-primary">
+          <Link to={`items/${id}`} className="btn btn-primary w-full">
             Start Practice
           </Link>
         </div>

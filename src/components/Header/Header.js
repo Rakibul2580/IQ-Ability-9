@@ -1,9 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { faList } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-1">
       <div className="navbar bg-gradient-to-r from-violet-300 to-fuchsia-300 rounded-md z-10">
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-2xl font-bold text-cyan-900">
@@ -13,21 +15,21 @@ const Header = () => {
         <div className="flex-none gap-2">
           <div className="flex-none  hidden sm:block">
             <ul className="menu menu-horizontal p-0 text-cyan-900 font-medium">
-              <li>
+              <li className="mx-2">
                 <NavLink to={"/"}>Topics</NavLink>
               </li>
-              <li>
+              <li className="mx-2">
                 <NavLink to={"/statistics"}>Statistics</NavLink>
               </li>
-              <li>
+              <li className="mx-2">
                 <NavLink to={"/blog"}>Blog</NavLink>
               </li>
             </ul>
           </div>
           <div className="dropdown dropdown-end sm:hidden">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-              <div className="w-10 rounded-full">
-                <img src="https://placeimg.com/80/80/people" />
+              <div className="text-cyan-800">
+                <FontAwesomeIcon icon={faList}></FontAwesomeIcon>
               </div>
             </label>
             <ul
@@ -37,10 +39,10 @@ const Header = () => {
               <li>
                 <NavLink to={"/"}>Topics</NavLink>
               </li>
-              <li>
+              <li className="mt-2">
                 <NavLink to={"/statistics"}>Statistics</NavLink>
               </li>
-              <li>
+              <li className="mt-2">
                 <NavLink to={"/blog"}>Blog</NavLink>
               </li>
             </ul>
