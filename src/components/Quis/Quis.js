@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
+
 import Prinquis from "./Prinquis";
 import Swal from "sweetalert2";
 
@@ -26,7 +27,6 @@ const Quis = () => {
       setFalsecount((count) => count + 1);
     }
   };
-  console.log(datas);
   return (
     <div className="blog sm:flex mt-16">
       <div className="md:w-9/12 w-12/12">

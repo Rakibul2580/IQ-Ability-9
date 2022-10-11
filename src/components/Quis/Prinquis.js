@@ -1,17 +1,17 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
-import Swal from "sweetalert2";
+
+import "react-toastify/dist/ReactToastify.css";
+import { toast, ToastContainer } from "react-toastify";
+
+import Option from "./Option";
+import { Link } from "react-router-dom";
 
 const Prinquis = ({ item, handleAns }) => {
   const { question, options, correctAnswer } = item;
-  const getAns = (ans) => {
-    Swal.fire({
-      title: ans,
-      showConfirmButton: false,
-      timer: 1500,
-    });
-  };
+  const notify = (ans) => toast(ans);
   return (
     <div>
       <div className="border-4 border-sky-300 rounded-md shadow-2xl m-5 mt-2 md:m-10 p-5 bg-white">
@@ -19,28 +19,23 @@ const Prinquis = ({ item, handleAns }) => {
           <h1 className="text-2xl font-semibold text-black">
             Quiz : {question.replace("<p>", " ").replace("</p>", " ")}
           </h1>
-          <button>
+          <Link>
             <FontAwesomeIcon
-              onClick={() => getAns(correctAnswer)}
+              onClick={() => notify(correctAnswer)}
               className="text-black"
               icon={faEye}
             />
-          </button>
+            <ToastContainer />
+          </Link>
         </div>
         <form className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
-          {options.map((option) => (
-            <label
-              onClick={() => handleAns(correctAnswer, option)}
-              className="flex items-center p-3 rounded-md bg-sky-200 shadow-xl text-black font-medium mt-3"
-            >
-              <input
-                type="radio"
-                name="radio-6"
-                className="radio radio-accent"
-                clicked
-              />
-              <p className="ml-2">{option}</p>
-            </label>
+          {options.map((option, id) => (
+            <Option
+              key={id}
+              handleAns={handleAns}
+              correctAnswer={correctAnswer}
+              option={option}
+            ></Option>
           ))}
         </form>
       </div>

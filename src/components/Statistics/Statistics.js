@@ -3,8 +3,6 @@ import {
   Area,
   AreaChart,
   CartesianGrid,
-  Line,
-  LineChart,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -15,7 +13,7 @@ import { ItemsContext } from "../Main/Main";
 const Statistics = () => {
   const data = useContext(ItemsContext);
   return (
-    <div className="h-screen bg-white flex items-center justify-center w-full">
+    <div className="h-screen bg-white flex items-center justify-center w-full mt-16">
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart
           width={500}
