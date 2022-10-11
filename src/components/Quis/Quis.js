@@ -26,15 +26,19 @@ const Quis = () => {
       setFalsecount((count) => count + 1);
     }
   };
+  console.log(datas);
   return (
-    <div className="flex">
-      <div className="w-9/12">
+    <div className="blog sm:flex">
+      <div className="md:w-9/12 w-12/12">
+        <h1 className="text-5xl font-bold text-sky-400 mt-5">
+          {datas.data.name}
+        </h1>
         {datas.data.questions.map((item) => (
           <Prinquis key={item.id} item={item} handleAns={handleAns}></Prinquis>
         ))}
       </div>
       <div className="w-3/12">
-        <div className=" bg-sky-400 py-4 px-1 sticky top-0 rounded-md mt-10 mr-5">
+        <div className=" bg-sky-400 py-4 px-1 sticky top-0 rounded-md mr-5">
           <h1 className="text-white text-3xl font-bold">Marks</h1>
           <h4 className="text-white text-lg font-medium mt-2">
             Total Quiz: {datas.data.questions.length}
