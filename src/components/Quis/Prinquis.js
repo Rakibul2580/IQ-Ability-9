@@ -14,7 +14,7 @@ const Prinquis = ({ item, handleAns }) => {
   };
   return (
     <div>
-      <div className="border-4 border-sky-300 rounded-md shadow-2xl m-5 md:m-10 p-5 bg-white">
+      <div className="border-4 border-sky-300 rounded-md shadow-2xl m-5 mt-2 md:m-10 p-5 bg-white">
         <div className="blog md:flex md:justify-between">
           <h1 className="text-2xl font-semibold text-black">
             Quiz : {question.replace("<p>", " ").replace("</p>", " ")}

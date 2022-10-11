@@ -28,7 +28,7 @@ const Quis = () => {
   };
   console.log(datas);
   return (
-    <div className="blog sm:flex">
+    <div className="blog sm:flex mt-16">
       <div className="md:w-9/12 w-12/12">
         <h1 className="text-5xl font-bold text-sky-400 mt-5">
           Quiz of: {datas.data.name}
@@ -38,7 +38,7 @@ const Quis = () => {
         ))}
       </div>
       <div className="md:w-3/12 w-12/12">
-        <div className=" bg-sky-400 py-4 px-1 sticky top-0 rounded-md mx-5 md:mr-5">
+        <div className=" bg-sky-400 py-4 px-1 sticky top-16 rounded-md mx-5 md:mr-5">
           <h1 className="text-white text-3xl font-bold">Marks</h1>
           <h4 className="text-white text-lg font-medium mt-2">
             Total Quiz: {datas.data.questions.length}
