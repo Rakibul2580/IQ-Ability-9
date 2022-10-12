@@ -2,7 +2,7 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div className="mt-16 h-full md:h-screen bg-white">
+    <div className="pt-32 h-full md:h-screen bg-white">
       <div>
         <div tabIndex={0} className="collapse group mt-16 rounded-md mx-10">
           <div className="collapse-title bg-primary text-primary-content group-focus:bg-secondary group-focus:text-secondary-content">
@@ -16,7 +16,7 @@ const Blog = () => {
             </p>
           </div>
         </div>
-        <div tabIndex={0} className="collapse group mt-10 rounded-md mx-10">
+        <div tabIndex={1} className="collapse group mt-10 rounded-md mx-10">
           <div className="collapse-title bg-primary text-primary-content group-focus:bg-secondary group-focus:text-secondary-content">
             2. How does Context API work ?
           </div>
@@ -30,7 +30,7 @@ const Blog = () => {
             </p>
           </div>
         </div>
-        <div tabIndex={0} className="collapse group mt-10 rounded-md mx-10">
+        <div tabIndex={2} className="collapse group mt-10 rounded-md mx-10">
           <div className="collapse-title bg-primary text-primary-content group-focus:bg-secondary group-focus:text-secondary-content">
             3. What is useRef?
           </div>
