@@ -12,7 +12,7 @@ const Quis = () => {
     if (correctAnswer == option) {
       Swal.fire({
         icon: "success",
-        title: "Your work has been saved",
+        title: "CorrectAnswer",
         showConfirmButton: false,
         timer: 1500,
       });
@@ -20,7 +20,7 @@ const Quis = () => {
     } else {
       Swal.fire({
         icon: "warning",
-        title: "Are you sure?",
+        title: "IncorrectAnswer",
         showConfirmButton: false,
         timer: 1500,
       });
