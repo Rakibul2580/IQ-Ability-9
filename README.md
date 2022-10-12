@@ -2,6 +2,14 @@
 
 ## Live Link : https://jolly-otter-d88668.netlify.app
 
+## In my project there are home, statistics and blog section. The home section contains few cards, every card a has a button which is dynamic.
+
+## When the button is Clicked it will open the card quiz. Every quiz has different type of option. When clicked the option it will show whether the answer right or wrong.
+
+## In statistics section i have shown the chart bar of Total value.
+
+## And the Blog section I've write the question answers.
+
 ### Use Css Tailwind :
 
 #### Tailwind is vary easy and smart : https://tailwindcss.com/
