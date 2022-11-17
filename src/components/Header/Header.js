@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { faList } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
@@ -8,9 +8,12 @@ const Header = () => {
     <div className="container mx-auto">
       <div className="navbar bg-gradient-to-r from-violet-300 to-fuchsia-300 z-10 fixed left-0 right-0 top-0">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-2xl font-bold text-cyan-900">
+          <Link
+            to="/"
+            className="btn btn-ghost normal-case text-2xl font-bold text-cyan-900"
+          >
             IQ Ability
-          </a>
+          </Link>
         </div>
         <div className="flex-none gap-2">
           <div className="flex-none  hidden sm:block">
